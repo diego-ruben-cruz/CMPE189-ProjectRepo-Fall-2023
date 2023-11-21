@@ -16,13 +16,13 @@
 \title{On Wireless Audio: A Brief Literature Review}
 
 \author{\IEEEauthorblockN{Diego Cruz}
-    \IEEEauthorblockA{\textit{Dept. of Computer Science} \\
+    \IEEEauthorblockA{\textit{Dept. of Computer Engineering} \\
         \textit{San Jose State University}\\
         San Jose, United States \\
         diego.cruz@sjsu.edu}
     \and
     \IEEEauthorblockN{Shiv Shankar Yadav}
-    \IEEEauthorblockA{\textit{Dept. of Computer Science} \\
+    \IEEEauthorblockA{\textit{Dept. of Computer Engineering} \\
         \textit{San Jose State University}\\
         San Jose, United States \\
         shivshankar.yadav@sjsu.edu}
@@ -42,50 +42,69 @@
 \end{abstract}
 
 \begin{IEEEkeywords}
-    Wireless Audio, Fidelity, Wireless Networks
+    Wireless Audio, Fidelity, Wireless Networks, Bluetooth, 802.11 Wi-Fi
 \end{IEEEkeywords}
 
 \section*{Introduction}
 Wireless audio is not particularly a new technology, but there have been several different
 implementations such as radio waves, Bluetooth audio, and proprietary protocols that
 private corporations have made for their respective products.\cite{bhalla_unraveling_2021}
+Modern research has included the possibility of using end-to-end audio transmission using laser communications \cite{anthony_approach_2021}, or otherwise creating hybridizations between Wi-Fi and Bluetooth audio implementations to minimize interference.\cite{forenbacher_throughput_2021}
 
 The most well-recognized wireless audio protocol today is the Bluetooth audio protocol
-or the IEEE 802.11 WiFi protocol , but there exist different methods and protocols
+or the IEEE 802.11 WiFi protocol, but there exist different methods and protocols
 such as broadcast radio, Apple's native AirPlay, and the Digital Living Network
 Alliance (DLNA) standards suite among several others.\cite{parks_wireless_2013}
 
-The intention of this project is to investigate the realm of wireless local area
+The intention of this literature review is to investigate the realm of wireless local area
 networks at a small scale. The different protocols and technologies/standards
-surrounding wireless audio often are constrained to scale, but some stand out
-among others to cover different rooms within a building. However, there will
-naturally be a brief review of the history of wireless communications regarding
-strictly the transmission and reception of audio signals, or other signals that
-are then transcribed to audio.
+surrounding wireless audio often are constrained to scales built on line of sight,
+but some stand out among others to cover different rooms within a building.
+However, there will naturally be a brief review of the history of wireless
+communications regarding strictly the transmission and reception of audio
+signals, or other signals that are then transcribed to audio.
 
+\section*{The History of Wireless Audio}
+To understand the history of wireless audio, one must first understand the history of
+wireless communications. In general, wireless communications were developed from a need to
+communicate across vast distances without the logistical nightmare of cabling across various
+environments. A few realworld examples could include having to transmit signals across
+mountain ranges, or having to communicate between land and sea, and perhaps between
+continents at large.\cite{noauthor_ericsson_2001} Ultimately, the one given the most credit
+for inventing modern wireless communication began with Guglielmo Marconi developing the a
+telegraph that was capable of utilizing radio frequencies to send morse code messages across
+vast distances. His hallmark demonstration was in sending a wireless morse code transmission
+from the United Kingdom to Canada.\cite{noauthor_ericsson_2001}
+
+Following innovations in communications hardware such as the triode and the vacuum tube
+receiver/transmitter\cite{white_pre-war_2003}, the Marconi telegraph led to the invention of
+the radio, resulting in a mass adoption of the radio in the American household.\cite
+{noauthor_ericsson_2001} During the 1950s, only then were wireless telephones made more
+common with systems like the Ericsson MTA vehicular telephony system. A few decades later,
+nearing the end of the Cold War, the GSM specifications established in the 90s
+\cite{suresh_introduction_2023}, there were increasingly compact telephones capable of
+fitting in the pocket of an individual.\cite{noauthor_ericsson_2001}
+
+It is around this time that Ericsson, a communications company that specialized in telephony,
+began to explore avenues of communication surrounding the personal computer, eventually
+leading to the creation of the first Bluetooth specification in the late 90s and brought to
+market in 2001.\cite{irekvist_bluetooth_2022} Later on, IEEE would modify their 802.11
+specification to include Bluetooth audio as well as an wireless audio implementation native
+to the Wi-Fi protocol.\cite{noauthor_ieee_2002}
 
 \section*{Discussion}
 
-The team is open to utilizing diverse resources, such as journal articles, videos and 
-documentaries, and empirical records. With this goal in mind, the team aims to locate 
-materials that cover the evolution of wireless audio, highlighting the strengths and 
-weaknesses of each implementation.
+A few studies have been chosen for the purposes of this particular literature review, to showcase and display different technologies that were used for wireless audio at some point. The aforementioned technologies are listed below:
 
-From the preliminary research, it seems that the advent of wireless communications is 
-deeply intertwined with the prospect of wireless audio, beginning with Marconi 
-popularizing radio communications in the 20th century.\cite{bhalla_unraveling_2021} Deliberate care will have 
-to be taken to avoid broadening the discussions of the paper to wireless 
-communications in their entirety as opposed to strictly wireless audio. Much more 
-research will be required over the course of the semester to gain a comprehensive 
-understanding of the subject at hand, and creative measures taken to obtain research 
-materials not immediately available from the resources that SJSU offers to students.
+\begin{itemize}
+    \item Radio Frequency (RF)
+    \item Infrared (IR)
+    \item Bluetooth (BT)
+    \item 802.11 Wi-Fi Audio
+    \item Near-Field Communication (NFC)
+\end{itemize}
 
-A possible avenue of research could involve obtaining specifications from different 
-implementations of wireless audio intended for different purposes, such as mobile 
-uses, home theater uses, and high-fidelity audio applications. In addition to this, 
-different protocols such as Voice over IP (VoIP) may also have to be taken into 
-account for the role they may have played in the development of wireless audio 
-technologies, even if it is not particularly considered a wireless protocol.
+In addition to the previously discussed technologies, there are increasing amounts, one such technology involves the 
 
 \section*{Conclusion and Future Work}
 
