@@ -120,7 +120,7 @@ With respect to infrared audio transmission, a small group of researchers develo
 approach to end-to-end audio transmission using laser communications in 2021. The methodology
 of the study involved the use of small-scale hardware to simulate the transmission and
 reception of audio signals at a larger scale, and the use of software to enable the hardware
-to align to maximize throughput.The transmitter of the small-scale system was composed of a
+to align to maximize throughput. The transmitter of the small-scale system was composed of a
 microcontroller, a rotating sensor to align the transmitting laser with the receiver, a
 modulation circuit to encode the audio input, and a transmitting laser to send the signal.
 And, the receiver of the system was composed of an alignment laser that would align with the
@@ -148,7 +148,7 @@ longer actively maintained by IEEE.\cite{bhalla_unraveling_2021} Even then, Blue
 extensive history with the IEEE with a multitude of updates that prioritize
 backwards-compatibility, similar to the Intel x86 processor architecture.
 \cite{noauthor_bluetooth_nodate} As such, we will first examine the development of Bluetooth
-over time as well as explore Bluetooth Low-Energy -- Otherwise known as Bluetooth LE.
+over time as well as explore Bluetooth Low-Energy, otherwise known as Bluetooth LE.
 \cite{bhalla_unraveling_2021}
 
 Bluetooth is a short-range wireless communications protocol that can range between 10-15
@@ -161,8 +161,8 @@ This 'hopping' technique is known as Frequency Hopping Spread Spectrum (FHSS), w
 used as a security measure because it is capable of encrypting audio. However, Bluetooth
 relies on additional encryption using private keys for each party and are only known to the
 devices involved with each other. Over the years, Bluetooth has seen different changes such
-as modifications to its FHSS or enhancements to its throughput -- known as Enhanced Data Rate
-(EDR) -- or changes to its medium access protocols (MACs) otherwise known as Alernative MAC/
+as modifications to its FHSS or enhancements to its throughput, known as Enhanced Data Rate
+(EDR), or changes to its medium access protocols (MACs) otherwise known as Alernative MAC/
 PHY (AMP). Ultimately, leading up to Bluetooth 4.0 in 2010, changes based on contemporary
 Wi-Fi implementations and refinements to legacy protocols had been made under the oversight
 of IEEE.\cite{noauthor_bluetooth_nodate}
@@ -203,7 +203,19 @@ diceretur, officia media omnia aut pleraque servantem vivere. Id enim natura des
 Quamquam ab iis philosophiam et omnes ingenuas disciplinas habemus;
 
 % This is where DC refers to the future technology and possible correspondence
-In addition to the previously discussed technologies, there are emergent audio technologies that are pushing the envelope of wireless high-fidelity (Hi-Fi) audio. One such technology involves a proprietary wireless communication standard that is capable of transmitting audio at a 16ms latency: The AIAIAI Audio UNIT-4 Wireless+ speakers. 
+In addition to the previously discussed technologies, there are emergent audio technologies
+that are pushing the envelope of wireless high-fidelity (Hi-Fi) audio. One such technology
+involves a proprietary wireless communication standard that is capable of transmitting audio
+at a 16ms latency: The AIAIAI Audio UNIT-4 Wireless+ speakers with the W+ Link technology.
+This particular technology does not have publicly available specifications, but AIAIAI have
+stated some of the key differences that distinguishes it from bluetooth. One such difference
+is that the W+ Link technology makes use of two antennas for reception and transmission of
+information as opposed to the singular antenna that Bluetooth makes use of. What the presence
+of two antennas entail is the ability to swap between one or the other if one connection
+drops out. Additionally, the technology prioritizes keeping the same latency by means of
+swapping between pre-defined radio frequency bands as opposed to using a pseudorandom
+pattern. Additionally, the W+ Link technology does not compress audio, delivering it at a 44.
+1 kHz 16-bit quality, roughly equating to a little over 1400 Kbps.\cite{noauthor_unit-4_2023}
 
 \section*{Conclusion and Future Work}
 
