@@ -90,11 +90,13 @@ began to explore avenues of communication surrounding the personal computer, eve
 leading to the creation of the first Bluetooth specification in the late 90s and brought to
 market in 2001.\cite{irekvist_bluetooth_2022} Later on, IEEE would modify their 802.11
 specification to include Bluetooth audio as well as an wireless audio implementation native
-to the Wi-Fi protocol.\cite{noauthor_ieee_2002}
+to the Wi-Fi protocol.\cite{noauthor_bluetooth_nodate}
 
 \section*{Discussion}
 
-A few studies have been chosen for the purposes of this particular literature review, to showcase and display different technologies that were used for wireless audio at some point. The aforementioned technologies are listed below:
+A few studies have been chosen for the purposes of this particular literature review, to
+showcase and display different technologies that were used for wireless audio at some point.
+The aforementioned technologies are listed below:
 
 \begin{itemize}
     \item Radio Frequency (RF)
@@ -104,7 +106,104 @@ A few studies have been chosen for the purposes of this particular literature re
     \item Near-Field Communication (NFC)
 \end{itemize}
 
-In addition to the previously discussed technologies, there are emergent audio technologies that are pushing the envelope of wireless high-fidelity (Hi-Fi) audio. One such technology involves a proprietary.
+% Insert RF tidbit here, above the blurb I typed in IR
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod cum accidisset ut alter alterum
+necopinato videremus, surrexit statim. Videamus igitur sententias eorum, tum ad verba
+redeamus. Duo Reges: constructio interrete. Quam ob rem tandem, inquit, non satisfacit? Res
+enim se praeclare habebat, et quidem in utraque parte. Quae tamen a te agetur non melior,
+quam illae sunt, quas interdum optines. Earum etiam rerum, quas terra gignit, educatio
+quaedam et perfectio est non dissimilis animantium. Alterum significari idem, ut si
+diceretur, officia media omnia aut pleraque servantem vivere. Id enim natura desiderat.
+Quamquam ab iis philosophiam et omnes ingenuas disciplinas habemus;
+
+With respect to infrared audio transmission, a small group of researchers developed an
+approach to end-to-end audio transmission using laser communications in 2021. The methodology
+of the study involved the use of small-scale hardware to simulate the transmission and
+reception of audio signals at a larger scale, and the use of software to enable the hardware
+to align to maximize throughput.The transmitter of the small-scale system was composed of a
+microcontroller, a rotating sensor to align the transmitting laser with the receiver, a
+modulation circuit to encode the audio input, and a transmitting laser to send the signal.
+And, the receiver of the system was composed of an alignment laser that would align with the
+rotating sensor of the transmitter,  a photodiode that would take in the transmitting laser,
+and a demodulation circuit to decode the audio and output it.\cite{anthony_approach_2021}
+
+In the context of that area of study, it has been established that laser communications are
+less susceptible to signal interference because of the relative lack of cross traffic that
+could result in signal or data loss.Additionally, the signal itself does not require any kind
+of shielding whereas wired communications would need some sort of protection over long
+distance transmissions. However, this does not mean that IR wireless audio is without its
+shortcomings, as it is heavily dependent on the transmitter and receiver having a 'line of
+sight' towards each other, which means that there would be a point where the distance would
+be too great due to the curvature of the earth itself. Laser communications finds itself as a
+useful technology between short and midrange distances for signals which require high
+fidelity, while RF is particularly useful for long-range communications where reach is
+considered more important than fidelity.\cite{anthony_approach_2021}
+
+With respect to Bluetooth, the specifications of IEEE standards will be referenced, which
+refers to version 1.1 until version 4.0, and the Bluetooth Special Interest Group (SIG) has
+managed Bluetooth from version 4.0 to its current iteration: 5.4. Bluetooth seldom needs an
+introduction, as it is one of the most ubiquitous forms of wireless audio for consumer-grade
+electronics. As previously mentioned, it was adopted in 2001-2002 as IEEE 802.15.1 but is no
+longer actively maintained by IEEE.\cite{bhalla_unraveling_2021} Even then, Bluetooth has an
+extensive history with the IEEE with a multitude of updates that prioritize
+backwards-compatibility, similar to the Intel x86 processor architecture.
+\cite{noauthor_bluetooth_nodate} As such, we will first examine the development of Bluetooth
+over time as well as explore Bluetooth Low-Energy -- Otherwise known as Bluetooth LE.
+\cite{bhalla_unraveling_2021}
+
+Bluetooth is a short-range wireless communications protocol that can range between 10-15
+meters, depending on the version that is implemented into the device. It is used for
+different applications, including abstract data transmission as well as audio transmission.
+Bluetooth typically makes use of radio frequencies spanning 2400 MHz to 2483 MHz, and is at
+its core, a packet-based protocol that sends packets over 79 channels that are chosen
+seemingly at random. These 79 channels are cycled at a capacity of 1600 times per second.
+This 'hopping' technique is known as Frequency Hopping Spread Spectrum (FHSS), which could be
+used as a security measure because it is capable of encrypting audio. However, Bluetooth
+relies on additional encryption using private keys for each party and are only known to the
+devices involved with each other. Over the years, Bluetooth has seen different changes such
+as modifications to its FHSS or enhancements to its throughput -- known as Enhanced Data Rate
+(EDR) -- or changes to its medium access protocols (MACs) otherwise known as Alernative MAC/
+PHY (AMP). Ultimately, leading up to Bluetooth 4.0 in 2010, changes based on contemporary
+Wi-Fi implementations and refinements to legacy protocols had been made under the oversight
+of IEEE.\cite{noauthor_bluetooth_nodate}
+
+Past 2010, under the supervision of SIG, Bluetooth LE was established which operates under a
+similar premise compared to conventional Bluetooth, but was different in that it had
+energy-saving measures to help battery-powered devices last for a long time. This is
+accomplished by having the device in sleep mode for most of the time until communication was
+established from the 'host' devices.\cite{bhalla_unraveling_2021} Bluetooth LE makes use its
+unique data advertising for device discovery and connection, which can further be used to
+advertise general application data to an unlimited number of listeners. LE is not directly
+compatible with conventional bluetooth, but both implementations can be physically applied to
+the hardware so it can use either one.\cite{bhalla_unraveling_2021} In regards to the radio
+frequencies used, LE makes use of 40 channels that are hopped with FHSS at slower rates to
+conserve power, which can enable multiple exchanges while on the same channel.
+\cite{noauthor_bluetooth_nodate} This particular technology sees frequent use in wireless
+audio, because specializations were made that allowed for a consistent exchange while
+conserving energy and thus prolonging battery life.\cite{bhalla_unraveling_2021}
+
+% Insert 802.11 WiFi Audio tidbit here 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod cum accidisset ut alter alterum
+necopinato videremus, surrexit statim. Videamus igitur sententias eorum, tum ad verba
+redeamus. Duo Reges: constructio interrete. Quam ob rem tandem, inquit, non satisfacit? Res
+enim se praeclare habebat, et quidem in utraque parte. Quae tamen a te agetur non melior,
+quam illae sunt, quas interdum optines. Earum etiam rerum, quas terra gignit, educatio
+quaedam et perfectio est non dissimilis animantium. Alterum significari idem, ut si
+diceretur, officia media omnia aut pleraque servantem vivere. Id enim natura desiderat.
+Quamquam ab iis philosophiam et omnes ingenuas disciplinas habemus;
+
+% Insert NFC tidbit here
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod cum accidisset ut alter alterum
+necopinato videremus, surrexit statim. Videamus igitur sententias eorum, tum ad verba
+redeamus. Duo Reges: constructio interrete. Quam ob rem tandem, inquit, non satisfacit? Res
+enim se praeclare habebat, et quidem in utraque parte. Quae tamen a te agetur non melior,
+quam illae sunt, quas interdum optines. Earum etiam rerum, quas terra gignit, educatio
+quaedam et perfectio est non dissimilis animantium. Alterum significari idem, ut si
+diceretur, officia media omnia aut pleraque servantem vivere. Id enim natura desiderat.
+Quamquam ab iis philosophiam et omnes ingenuas disciplinas habemus;
+
+% This is where DC refers to the future technology and possible correspondence
+In addition to the previously discussed technologies, there are emergent audio technologies that are pushing the envelope of wireless high-fidelity (Hi-Fi) audio. One such technology involves a proprietary wireless communication standard that is capable of transmitting audio at a 16ms latency: The AIAIAI Audio UNIT-4 Wireless+ speakers. 
 
 \section*{Conclusion and Future Work}
 
