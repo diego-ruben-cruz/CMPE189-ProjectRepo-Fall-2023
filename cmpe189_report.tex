@@ -116,6 +116,7 @@ quaedam et perfectio est non dissimilis animantium. Alterum significari idem, ut
 diceretur, officia media omnia aut pleraque servantem vivere. Id enim natura desiderat.
 Quamquam ab iis philosophiam et omnes ingenuas disciplinas habemus;
 
+% IR portion
 With respect to infrared audio transmission, a small group of researchers developed an
 approach to end-to-end audio transmission using laser communications in 2021. The methodology
 of the study involved the use of small-scale hardware to simulate the transmission and
@@ -124,8 +125,16 @@ to align to maximize throughput. The transmitter of the small-scale system was c
 microcontroller, a rotating sensor to align the transmitting laser with the receiver, a
 modulation circuit to encode the audio input, and a transmitting laser to send the signal.
 And, the receiver of the system was composed of an alignment laser that would align with the
-rotating sensor of the transmitter,  a photodiode that would take in the transmitting laser,
-and a demodulation circuit to decode the audio and output it.\cite{anthony_approach_2021}
+rotating sensor of the transmitter, a photodiode that would take in the transmitting laser,
+and a demodulation circuit to decode the audio. The overall hardware architecture has been
+depicted as shown in Figure~\ref{fig:IR_hardware}.\cite{anthony_approach_2021}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\linewidth]{anthony-et-al-diagram.jpg}
+    \caption{IR Audio Hardware Architecture \cite{anthony_approach_2021}}
+    \label{fig:IR_hardware}
+\end{figure}
 
 In the context of that area of study, it has been established that laser communications are
 less susceptible to signal interference because of the relative lack of cross traffic that
@@ -139,6 +148,7 @@ useful technology between short and midrange distances for signals which require
 fidelity, while RF is particularly useful for long-range communications where reach is
 considered more important than fidelity.\cite{anthony_approach_2021}
 
+% Bluetooth Portion
 With respect to Bluetooth, the specifications of IEEE standards will be referenced, which
 refers to version 1.1 until version 4.0, and the Bluetooth Special Interest Group (SIG) has
 managed Bluetooth from version 4.0 to its current iteration: 5.4. Bluetooth seldom needs an
@@ -202,7 +212,7 @@ quaedam et perfectio est non dissimilis animantium. Alterum significari idem, ut
 diceretur, officia media omnia aut pleraque servantem vivere. Id enim natura desiderat.
 Quamquam ab iis philosophiam et omnes ingenuas disciplinas habemus;
 
-% This is where DC refers to the future technology and possible correspondence
+% Future technology and correspondence portion
 In addition to the previously discussed technologies, there are emergent audio technologies
 that are pushing the envelope of wireless high-fidelity (Hi-Fi) audio. One such technology
 involves a proprietary wireless communication standard that is capable of transmitting audio

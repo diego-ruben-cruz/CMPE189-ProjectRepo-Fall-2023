@@ -5,3 +5,5 @@ Home Repository for the CMPE 189 Project under Mahima Agumbe Suresh for Fall 202
 <!-- ## Requirements for running the LaTeX
 
 - TeX Live -->
+
+Useful resource for [audio format bitrates](https://www.audiomountain.com/tech/audio-file-size.html)
