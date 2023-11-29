@@ -5,6 +5,8 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{shapes, arrows}
 \graphicspath{{./images/}}
 
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
@@ -180,6 +182,35 @@ PHY (AMP). Ultimately, leading up to Bluetooth 4.0 in 2010, changes based on con
 Wi-Fi implementations and refinements to legacy protocols had been made under the oversight
 of IEEE.\cite{noauthor_bluetooth_nodate}
 
+\tikzstyle{block} = [rectangle, draw, text width=6em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{line} = [draw, -latex']
+
+\begin{figure}
+    \centering
+    \begin{tikzpicture}[node distance = 2cm, auto]
+        % Nodes
+        \node [rectangle, draw, text width=6em, text centered, rounded corners, minimum height=4em] (pairing) {Pairing};
+        \node [rectangle, draw, below of=pairing, text width=6em, text centered, rounded corners, minimum height=4em] (connection) {Connection Establishment};
+        \node [rectangle, draw, below of=connection, text width=6em, text centered, rounded corners, minimum height=4em] (source) {Audio Source Selection};
+        \node [rectangle, draw, below of=source, text width=6em, text centered, rounded corners, minimum height=4em] (encoding) {Audio Encoding};
+        \node [rectangle, draw, below of=encoding, text width=6em, text centered, rounded corners, minimum height=4em] (transmission) {Bluetooth Transmission};
+        \node [rectangle, draw, below of=transmission, text width=6em, text centered, rounded corners, minimum height=4em] (reception) {Reception};
+        \node [rectangle, draw, below of=reception, text width=6em, text centered, rounded corners, minimum height=4em] (decoding) {Audio Decoding};
+        \node [rectangle, draw, below of=decoding, text width=6em, text centered, rounded corners, minimum height=4em] (output) {Audio Output};
+
+        % Arrows
+        \path [draw, -latex'] (pairing) -- (connection);
+        \path [draw, -latex'] (connection) -- (source);
+        \path [draw, -latex'] (source) -- (encoding);
+        \path [draw, -latex'] (encoding) -- (transmission);
+        \path [draw, -latex'] (transmission) -- (reception);
+        \path [draw, -latex'] (reception) -- (decoding);
+        \path [draw, -latex'] (decoding) -- (output);
+    \end{tikzpicture}
+    \caption{Bluetooth Audio Transmission Process}
+    \label{fig:bluetooth_process}
+\end{figure}
+
 Past 2010, under the supervision of SIG, Bluetooth LE was established which operates under a
 similar premise compared to conventional Bluetooth, but was different in that it had
 energy-saving measures to help battery-powered devices last for a long time. This is
@@ -229,6 +260,13 @@ drops out. Additionally, the technology prioritizes keeping the same latency by 
 swapping between pre-defined radio frequency bands as opposed to using a pseudorandom
 pattern. Additionally, the W+ Link technology does not compress audio, delivering it at a 44.
 1 kHz 16-bit quality, roughly equating to a little over 1400 Kbps.\cite{noauthor_unit-4_2023}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\linewidth]{Unit-4_wireless_showcase.jpg}
+    \caption{AIAIAI UNIT-4 Wireless+ \cite{noauthor_unit-4_2023}}
+    \label{fig:unit-4_productPic}
+\end{figure}
 
 \section*{Conclusion and Future Work}
 
